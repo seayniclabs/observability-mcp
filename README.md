@@ -178,11 +178,18 @@ MIT — see [LICENSE](LICENSE).
 
 ## Built by
 
-[Seaynic Labs](https://seayniclabs.com) — homelab tools, MCP servers, and self-hosted infrastructure for solo operators and small teams.
+**[Charlie Seay](https://charlieseay.com)** — solo developer, homelab operator, and founder of [Seaynic Labs](https://seayniclabs.com). Building the tools I want to use, then sharing them.
 
-- **Store:** [store.seayniclabs.com](https://store.seayniclabs.com)
-- **Learn:** [hone.academy](https://hone.academy) — courses on self-hosted infrastructure, MCP servers, and AI agents
-- **Source code:** [github.com/seayniclabs](https://github.com/seayniclabs)
+- **Personal site & blog:** [charlieseay.com](https://charlieseay.com)
+- **GitHub:** [github.com/charlieseay](https://github.com/charlieseay)
+
+## Part of the Seaynic Labs ecosystem
+
+[Seaynic Labs](https://seayniclabs.com) ships homelab tools, MCP servers, and self-hosted infrastructure for solo operators and small teams.
+
+- **Store:** [store.seayniclabs.com](https://store.seayniclabs.com) — paid products: incident management, MCP server bundles, monitoring packs
+- **Learn:** [hone.academy](https://hone.academy) — courses on self-hosted infrastructure, MCP servers, AI agents, and the second-brain workflow
+- **Org on GitHub:** [github.com/seayniclabs](https://github.com/seayniclabs)
 
 ## Related projects
 
