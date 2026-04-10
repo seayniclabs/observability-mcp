@@ -16,6 +16,8 @@ from mcp.server.fastmcp import FastMCP
 from observability_mcp import __version__
 from observability_mcp.influx import InfluxConfigError, _config
 from observability_mcp.recipes.containers import get_top_cpu_containers
+from observability_mcp.recipes.disk import get_lab_disk_pct
+from observability_mcp.recipes.docker import get_container_count, get_top_memory_containers
 from observability_mcp.recipes.load import get_lab_load1, get_lab_load_history_24h
 from observability_mcp.recipes.memory import get_lab_memory_pct
 
@@ -30,6 +32,9 @@ mcp.tool()(get_lab_load1)
 mcp.tool()(get_lab_load_history_24h)
 mcp.tool()(get_lab_memory_pct)
 mcp.tool()(get_top_cpu_containers)
+mcp.tool()(get_lab_disk_pct)
+mcp.tool()(get_container_count)
+mcp.tool()(get_top_memory_containers)
 
 
 def main() -> None:
