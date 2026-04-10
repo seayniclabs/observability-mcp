@@ -1,0 +1,72 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "observability-mcp"
+version = "0.1.0"
+description = "Read-only MCP server exposing Telegraf/InfluxDB lab metrics as no-input recipe tools. Built for Hermes Agent and any MCP-compatible client."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [
+    { name = "Seaynic Labs", email = "hello@seayniclabs.com" },
+]
+keywords = [
+    "mcp",
+    "model-context-protocol",
+    "influxdb",
+    "telegraf",
+    "observability",
+    "homelab",
+    "ai-agent",
+    "hermes-agent",
+    "claude",
+    "monitoring",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: System Administrators",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: System :: Monitoring",
+    "Topic :: System :: Systems Administration",
+    "Topic :: Software Development :: Libraries",
+]
+dependencies = [
+    "mcp[cli]>=1.0.0",
+    "httpx>=0.27.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+    "pytest-asyncio>=0.23.0",
+    "ruff>=0.5.0",
+]
+
+[project.scripts]
+observability-mcp = "observability_mcp.server:main"
+
+[project.urls]
+Homepage = "https://seayniclabs.com"
+Repository = "https://github.com/seayniclabs/observability-mcp"
+Issues = "https://github.com/seayniclabs/observability-mcp/issues"
+"Seaynic Labs Store" = "https://store.seayniclabs.com"
+"Hone Academy" = "https://hone.academy"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/observability_mcp"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py311"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
